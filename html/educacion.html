@@ -60,8 +60,8 @@
         <h3>Agregar estudios</h3>
         <form>
           <p>
-            <label for="anio">Año:</label>
-            <select class="" name="anio">
+            <label for="anio"><strong>Año:</strong></label>
+            <select class="" name="anio" required="">
               <option value="">2010</option>
               <option value="">2011</option>
               <option value="">2012</option>
@@ -73,20 +73,33 @@
             </select>
           </p>
           <p>
-            <label for="institucion">Institución::</label>
+            <label for="institucion"><strong>Institución:</strong></label>
             <input type="text" autofocus="" name="institucion" value="" placeholder="Ej:UNAM" required="">
           </p>
           <p>
-            <label for="lugar">Lugar:</label>
-            <textarea name="lugar" rows="2" cols="50"></textarea>
-            
+            <label for="lugar"><strong>Lugar:</strong></label>
+            <textarea name="lugar" rows="2" cols="40" placeholder="Ej:CDMX"></textarea>
           </p>
-
+          <p>
+            <label for="culmino"><strong>¿Culminó?</strong></label>
+            <input type="radio" name="culmino" value="" required="">Si
+            <input type="radio" name="culmino" value="" required="">No
+          </p>
+          <p>
+            <input type="submit" name="enviar" value="Enviar">
+          </p>
         </form>
       </article>
     </section>
 
-
+    <!--Etiqueta semantica FOOTER, incluye derechos de autor e informacion de contacto-->
+    <footer>
+      <p><strong>Derechos Reservados</strong>
+      </br><strong>E-mail:</strong> adizen.aa@gmail.com
+      </br><strong>Telefono:</strong> 246 116 9042
+      </br><strong>FB:</strong> adriana.zenaida
+      </p>
+    </footer>
 
   </body>
 </html>
