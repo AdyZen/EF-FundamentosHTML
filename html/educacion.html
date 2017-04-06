@@ -33,6 +33,7 @@
     </nav>
     <!-- Etiqueta semantica SECTION, incluye Educación-->
     <section>
+      <!--Tabla de educacion y formulario-->
       <article>
         <h2>Educación</h2>
         <table border="1", cellpadding="5", cellspacing="0">
@@ -43,19 +44,45 @@
             <th><strong>¿Culminó?</strong></th>
           </tr>
           <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
+            <th>2005</th>
+            <th>Centro de Bachillerato Tecnológico Industrial y de Servicios No 3 </th>
+            <th>Tlaxcala, Tlax.</th>
+            <th>Si</th>
           </tr>
           <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
+            <th>2011</th>
+            <th>Universidad Autónoma de Tlaxcala</th>
+            <th>Apizaco, Tlaxcala</th>
+            <th>Si</th>
           </tr>
         </table>
+        <!--Formulario para agregar estudios-->
+        <h3>Agregar estudios</h3>
+        <form>
+          <p>
+            <label for="anio">Año:</label>
+            <select class="" name="anio">
+              <option value="">2010</option>
+              <option value="">2011</option>
+              <option value="">2012</option>
+              <option value="">2013</option>
+              <option value="">2014</option>
+              <option value="">2015</option>
+              <option value="">2016</option>
+              <option value="">2017</option>
+            </select>
+          </p>
+          <p>
+            <label for="institucion">Institución::</label>
+            <input type="text" autofocus="" name="institucion" value="" placeholder="Ej:UNAM" required="">
+          </p>
+          <p>
+            <label for="lugar">Lugar:</label>
+            <textarea name="lugar" rows="2" cols="50"></textarea>
+            
+          </p>
 
+        </form>
       </article>
     </section>
 
